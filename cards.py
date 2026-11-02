@@ -1,5 +1,5 @@
 class Card:
-    """Represents one playing card."""
+    #Represents one playing card.
 
     RANK_VALUES = {
         "2": 2,
