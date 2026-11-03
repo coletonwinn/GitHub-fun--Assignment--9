@@ -1,4 +1,19 @@
-#Player.__init__(self, name, deck) — store the player’s name and deck.
-#Player.draw_card(self) — draw a card from the player’s deck.
-#Player.collect_cards(self, cards) — add cards won to the player’s deck.
-#Player.card_count(self) — return the player’s total cards
+class Player:
+
+    def __init__(self, name, deck):
+        # Stores the player's name and deck.
+        self.name = name
+        self.deck = deck
+
+    def draw_card(self):
+        # Draws a card from the player's deck.
+        return self.deck.draw_card()
+
+    def collect_cards(self, cards):
+        # Adds won cards to the player's deck.
+        self.deck.add_cards(cards)
+
+    def card_count(self):
+        # Returns the number of cards the player has.
+        return self.deck.cards_remaining()
+
