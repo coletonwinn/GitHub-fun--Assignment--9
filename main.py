@@ -1,4 +1,3 @@
-
 from deck import Deck
 from player import Player
 
@@ -70,7 +69,7 @@ def play_game():
                           f"{player1.name} ran out of cards!")
                     player2.collect_cards(cards_in_play)
                     break
-
+                        
                 if player2.card_count() == 0:
                     print(f"{player1.name} wins because "
                           f"{player2.name} ran out of cards!")

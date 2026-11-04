@@ -16,4 +16,3 @@ class Player:
     def card_count(self):
         # Returns the number of cards the player has.
         return self.deck.cards_remaining()
-

@@ -39,8 +39,3 @@ class Deck:
     def cards_remaining(self):
         # Returns the number of cards left.
         return len(self.cards)
-
-
-
-
-
